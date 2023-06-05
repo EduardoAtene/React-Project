@@ -1,0 +1,36 @@
+{      
+    "historico":    [
+        {
+            "id": 1, 
+            "nomeOperacao": "Desenvolvimento do Site", 
+            "type": "income",
+            "price": 5421.24,
+            "category": "Venda",
+            "createdAt": "2023-06-05T12:48:01.179Z"
+        },
+        {
+            "id": 2, 
+            "nomeOperacao": "Hamburguer", 
+            "type": "outcome",
+            "price": 59.99,
+            "category": "Alimentação",
+            "createdAt": "2023-04-05T10:48:01.179Z"
+        },
+        {
+            "id": 3, 
+            "nomeOperacao": "Parcelamento Casa", 
+            "type": "outcome",
+            "price": 1299.91,
+            "category": "Despesas",
+            "createdAt": "2023-04-05T10:48:01.179Z"
+        },
+        {
+            "id": 4, 
+            "nomeOperacao": "Outback", 
+            "type": "outcome",
+            "price": 219.64,
+            "category": "Alimentação",
+            "createdAt": "2023-04-05T10:48:01.179Z"
+        }
+    ]
+}
