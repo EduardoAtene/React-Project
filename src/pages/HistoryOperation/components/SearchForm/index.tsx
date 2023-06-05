@@ -5,6 +5,8 @@ import { SearchFormContainer,
 import { useForm } from "react-hook-form";
 import * as zod from 'zod'
 import { zodResolver } from "@hookform/resolvers/zod";
+import { HistoryContext } from "../../../../contexts/HistoryContext";
+import { useContextSelector } from "use-context-selector";
 
 const SearchHistoryScheme = zod.object({
     query: zod.string(),
@@ -13,6 +15,10 @@ const SearchHistoryScheme = zod.object({
 type SearchHistoryData = zod.infer<typeof SearchHistoryScheme> ;
 
 export function SearchForm(){
+    const fetchHistory = useContextSelector(HistoryContext, (v) => {
+        return v.fetchHistory;
+    });
+
     const { register, handleSubmit, formState: {isSubmitting} } = useForm<SearchHistoryData>({
         resolver: zodResolver(SearchHistoryScheme),
         defaultValues:{
@@ -21,8 +27,7 @@ export function SearchForm(){
     });
 
     async function handleSearchHistory(data : SearchHistoryData){
-        await new Promise(resolve => setTimeout(resolve,2000));
-        console.log(data);
+        await fetchHistory(data.query);
     }
     return(
         <SearchFormContainer onSubmit={handleSubmit(handleSearchHistory)}>

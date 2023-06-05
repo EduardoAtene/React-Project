@@ -1,8 +1,9 @@
-import { ReactNode, createContext, useEffect, useState } from "react";
-
+import { ReactNode, useCallback, useEffect, useState } from "react";
+import { api } from "../lib/axios";
+import { createContext } from 'use-context-selector';
 interface PropsHistoryOperation {
     id: number;
-    nomeOperacao: string;
+    description: string;
     type: 'income' | 'outcome';
     price: number;
     category: string;
@@ -11,6 +12,15 @@ interface PropsHistoryOperation {
 
 interface HistoryContextType{
     historico: PropsHistoryOperation[];
+    fetchHistory: (query?:string) => Promise<void>;
+    createHistory: (data: PropsNewHistoryOperation) => Promise<void>;
+}
+
+interface PropsNewHistoryOperation{
+    description: string;
+    type: 'income' | 'outcome';
+    price: number;
+    category: string;
 }
 
 interface HistoryProviderProps{
@@ -22,19 +32,37 @@ export function HistoryProvider( {children}: HistoryProviderProps){
 
     const [historico,setHistoryOperation] = useState<PropsHistoryOperation[]>([]);
 
-    async function loadHistory() {
-        const response = await fetch('http://localhost:3333/historico');
-        const data = await response.json();
+    const fetchHistory = useCallback(  async ( query ?: string) => {
+        const response = await api.get('historico',{
+            params: {
+                _sort: 'createdAt',
+                _order: 'desc',
+                q: query
+            }
+        });
+        setHistoryOperation(response.data);
+    }, []);
 
-        setHistoryOperation(data);
+    const  createHistory = useCallback(async (data:PropsNewHistoryOperation) => {
+        const {description,price,category,type} = data;
 
-    }
+        const respose = await api.post('historico',{
+            description,
+            price,
+            category,
+            type,
+            createdAt: new Date()
+        })
+
+        setHistoryOperation(state => [respose.data, ...state])
+    }, [] );
+
     useEffect(() => {
-        loadHistory();
-    } ,[])
+        fetchHistory();
+    } ,[fetchHistory])
 
     return(
-        <HistoryContext.Provider value={ { historico} } >
+        <HistoryContext.Provider value={ { historico, fetchHistory, createHistory} } >
             {children}
         </HistoryContext.Provider>
     );
