@@ -1,15 +1,13 @@
 import { Outlet } from "react-router-dom";
-import { HeaderButton } from "../../components/HeaderButton";
-import { Summary } from "../../components/Summary";
+import { Header } from "../../components/Header";
 import { HistoryProvider } from "../../contexts/HistoryContext";
 
 
-export function DefaultLayout(){
+export function ApresentationLayout(){
     return (
         <>
             <HistoryProvider >
-                <HeaderButton/>
-                <Summary/>
+                <Header/>
                 <Outlet/>
             </HistoryProvider>
             

@@ -1,68 +1,72 @@
 {
-  "historico": [
+  "Anuncio" : [
     {
-      "id": 1,
-      "description": "Desenvolvimento do Site",
-      "type": "income",
-      "price": 5421.24,
-      "category": "Venda",
-      "createdAt": "2023-06-04T12:48:01.179Z"
+      "idAnuncio": "1f894c58-143d-498d-8bd4-3a59ffd8fc75",
+      "idLivro": "a1cd6dfa-2732-47bb-913f-e9b6fb8eac68",
+      "idUsuario": "53ee9ec1-a7a5-4d65-9f38-dc32de4feb5a",
+      "dataCriacaoAnuncio": "2023-05-10T22:57:56.323",
+      "statusAnuncio": 1,
+      "bairroAnuncio": "Bairro5",
+      "cidadeAnuncio": "Cidade5",
+      "estadoAnuncio": "Estado5",
+      "dataCriacao": "2023-05-10T22:57:56.323"
     },
     {
-      "id": 2,
-      "description": "Hamburguer",
-      "type": "outcome",
-      "price": 59.99,
-      "category": "Alimentação",
-      "createdAt": "2023-04-02T10:48:01.179Z"
+      "idAnuncio": "3a0fc745-a2a6-4b51-9271-3fb9f0f7fb4e",
+      "idLivro": "31cac07e-ad4d-4d47-b0af-423291e3c81c",
+      "idUsuario": "0c2ae7dd-7cc8-448e-948d-bdd2fc1b364d",
+      "dataCriacaoAnuncio": "2023-10-05T22:57:56.323",
+      "statusAnuncio": 1,
+      "bairroAnuncio": "Bairro3",
+      "cidadeAnuncio": "Cidade3",
+      "estadoAnuncio": "Estado3",
+      "dataCriacao": "2023-10-05T22:57:56.323"
     },
     {
-      "id": 3,
-      "description": "Parcelamento Casa",
-      "type": "outcome",
-      "price": 1299.91,
-      "category": "Despesas",
-      "createdAt": "2023-04-05T10:48:01.179Z"
+      "idAnuncio": "300385e6-0ff8-4e88-9696-9cfc34a29b03",
+      "idLivro": "8352262d-1918-4189-8eec-20145e0635e4",
+      "idUsuario": "fc414b10-0f32-457e-881e-a40f07637eda",
+      "dataCriacaoAnuncio": "2023-10-05T22:57:56.323",
+      "statusAnuncio": 1,
+      "bairroAnuncio": "Bairro2",
+      "cidadeAnuncio": "Cidade2",
+      "estadoAnuncio": "Estado2",
+      "dataCriacao": "2023-10-05T22:57:56.323"
     },
     {
-      "id": 4,
-      "description": "Outback",
-      "type": "outcome",
-      "price": 219.64,
-      "category": "Alimentação",
-      "createdAt": "2023-04-03T10:48:01.179Z"
+      "idAnuncio": "9a6bdc72-9e90-4ef2-a223-bbb3c6a27806",
+      "idLivro": "e20d97ab-b59a-468c-9698-1c4ceebd8df4",
+      "idUsuario": "fb2003d5-3a6d-4a2a-9a83-66c9849818a7",
+      "dataCriacaoAnuncio": "2023-10-05T22:57:56.323",
+      "statusAnuncio": 1,
+      "bairroAnuncio": "Bairro1",
+      "cidadeAnuncio": "Cidade1",
+      "estadoAnuncio": "Estado1",
+      "dataCriacao": "2023-10-05T22:57:56.323"
     },
     {
-      "description": "Show Lagum",
-      "price": 70,
-      "category": "Eventos",
-      "type": "outcome",
-      "createdAt": "2023-06-05T18:19:23.689Z",
-      "id": 5
-    },
+      "idAnuncio": "c36e940f-aa86-429b-a6c4-de5c5e5cfd5e",
+      "idLivro": "37bd0f33-fbcd-489d-a65f-7aa02bacdb6a",
+      "idUsuario": "40dcb615-660b-42ab-81f0-d73e8418670d",
+      "dataCriacaoAnuncio": "2023-10-05T22:57:56.323",
+      "statusAnuncio": 1,
+      "bairroAnuncio": "Bairro4",
+      "cidadeAnuncio": "Cidade4",
+      "estadoAnuncio": "Estado4",
+      "dataCriacao": "2023-10-05T22:57:56.323"
+    }
+  ],
+  "livro":[
     {
-      "description": "Evento Atlética",
-      "price": 199,
-      "category": "evento",
-      "type": "outcome",
-      "createdAt": "2023-06-05T18:26:08.429Z",
-      "id": 6
-    },
-    {
-      "description": "Hotel",
-      "price": 199,
-      "category": "Despesas",
-      "type": "outcome",
-      "createdAt": "2023-06-05T18:40:22.772Z",
-      "id": 7
-    },
-    {
-      "description": "Salario",
-      "price": 2000,
-      "category": "Trabalho",
-      "type": "income",
-      "createdAt": "2023-06-05T18:40:41.403Z",
-      "id": 8
+      "idLivro": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "isbn": "12438hdS0D8HASD9ASD",
+      "titulo": "Uma História Intigrante",
+      "subtitulo": "SubTitulo: É sobre isso",
+      "dataPublicacao": "2023-06-08T00:38:11.128Z",
+      "editora": "Novasco",
+      "genero": "Fluido",
+      "autor": "Autore",
+      "dataCriacao": "2023-06-08T00:38:11.128Z"
     }
   ]
 }

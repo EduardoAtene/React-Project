@@ -1,29 +1,23 @@
-import { NavButtonHeader, HeaderContainer, HeaderContent, NewHistoryButton } from "./style";
+import { HeaderContainer, HeaderContent, LogoImageContent } from './style'
 
-import logoImage from '../../assets/logo.svg';
-import { Crosshair, ListDashes } from "@phosphor-icons/react";
-import * as Dialog from '@radix-ui/react-dialog';
-import { HistoryModal } from "../HistoryModal";
-
+import logoImage from '../../assets/logo_image.svg'
+import NavigationMenuDemo from './components/navigationMenu'
+import NavigationPerfilMenu from './components/NavigationPerfilMenu'
 
 export function Header() {
-    return (
-        <HeaderContainer>
-            <HeaderContent>
-                <img src={logoImage}/>
-
-                <Dialog.Root>
-                    <Dialog.Trigger asChild>
-                        <NewHistoryButton>
-                            Novo Historico
-                        </NewHistoryButton>
-                    </Dialog.Trigger>
-                    <HistoryModal/>
-                </Dialog.Root>
-                {/* <NavButtonHeader>
-                    <ListDashes size={26}/>
-                </NavButtonHeader> */}
-            </HeaderContent>
-        </HeaderContainer>
-    );
+  return (
+    <HeaderContainer>
+      <HeaderContent>
+        <LogoImageContent>
+          <img src={logoImage} />
+          <h2> BookShare</h2>
+        </LogoImageContent>
+        <NavigationMenuDemo />
+        <NavigationPerfilMenu />
+        {/* <NavButtonHeader>
+                <ListDashes size={26}/>
+            </NavButtonHeader> */}
+      </HeaderContent>
+    </HeaderContainer>
+  )
 }
