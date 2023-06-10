@@ -81,7 +81,7 @@ const NavigationMenuDemo = () => {
               Liberte os livros que ocupam espaço nas suas prateleiras e dê a eles a oportunidade de encantar novos leitores.
                Sua doação pode ser o primeiro capítulo de uma jornada incrível!
               </ListItemNav>
-              <ListItemNav href="/colors" title="Como doar Livros">
+              <ListItemNav href="/tutorial" title="Como doar Livros">
                 Quais meios devo fazer para realizar a doação de livro.
               </ListItemNav>
             </ul>
@@ -91,7 +91,7 @@ const NavigationMenuDemo = () => {
         <NavigationMenu.Item>
           <NavigationMenu.Link 
             className="NavigationMenuLink"
-            href="#"
+            href="/"
           >
             <AvatarModel src={logoImage} />
           </NavigationMenu.Link>
