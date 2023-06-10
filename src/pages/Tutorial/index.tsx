@@ -1,15 +1,10 @@
-import { MainPropagandaContent, ImageContainerPropaganda, DivContainerPropaganda } from './style'
-import { HistoryContext } from '../../contexts/HistoryContext'
-import { dateFormatter, priceFormatter } from '../../utility/formatter'
-import { useContextSelector } from 'use-context-selector'
+import { TutorialContainer } from "./style";
 
-import imgDesignCenter from '../../assets/download.png'
 export function Tutorial() {
-  const historico = useContextSelector(HistoryContext, (v) => {
-    return v.historico
-  })
+
   return (
       <>
+        <TutorialContainer>
           <h1>Tutorial de como doar livros: criar conta, criar anúncio e realizar a doação</h1>
 
           <h2>Introdução:</h2>
@@ -44,6 +39,8 @@ export function Tutorial() {
           <h2>Conclusão:</h2>
           <p>Parabéns! Você concluiu com sucesso o tutorial de como doar livros. Lembre-se de que a doação de livros pode fazer a diferença na vida de alguém, permitindo que mais pessoas tenham acesso ao conhecimento e à leitura. Continue ajudando a promover a educação e a cultura por meio das suas</p>
 
+        </TutorialContainer>
+          
     </>
   )
 }
