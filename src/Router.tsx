@@ -16,10 +16,10 @@ export function Router (){
             
            <Route path="/" element={<ApresentationLayout/>}>
                 <Route path="" element={<Home />}></Route>
-                <Route path="/doar" element={<ComoDoar />}></Route>
+                <Route path="/comodoar" element={<ComoDoar />}></Route>
                 <Route path="/contato" element={<EntreEmContato />}></Route>
                 <Route path="/receber" element={<ComoReceber />}></Route>
-                <Route path="/quem somos" element={<QuemSomos />}></Route>
+                <Route path="/quemsomos" element={<QuemSomos />}></Route>
             </Route>
             
 

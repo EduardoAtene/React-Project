@@ -45,13 +45,13 @@ const NavigationMenuDemo = () => {
                 </NavigationMenu.Link>
               </li>
 
-              <ListItemNav href="https://stitches.dev/" title="Catálogo de Livros">
+              <ListItemNav href="/" title="Catálogo de Livros">
                 Aqui você encontra todos os livros que foram doados pela população!
               </ListItemNav>
-              <ListItemNav href="/colors" title="Como pegar um Livro">
+              <ListItemNav href="/receber" title="Como pegar um Livro">
                 Aqui são os procedimentos para pegar o livro.
               </ListItemNav>
-              <ListItemNav href="https://icons.radix-ui.com/" title="">
+              <ListItemNav href="/" title="">
 
               </ListItemNav>
             </ul>
@@ -77,11 +77,11 @@ const NavigationMenuDemo = () => {
                 </NavigationMenu.Link>
               </li>
 
-              <ListItemNav href="https://stitches.dev/" title="Doar Livro">
+              <ListItemNav href="/comodoar" title="Doar Livro">
               Liberte os livros que ocupam espaço nas suas prateleiras e dê a eles a oportunidade de encantar novos leitores.
                Sua doação pode ser o primeiro capítulo de uma jornada incrível!
               </ListItemNav>
-              <ListItemNav href="/ComoDoar" title="Como doar Livros">
+              <ListItemNav href="/comodoar" title="Como doar Livros">
                 Quais meios devo fazer para realizar a doação de livro.
               </ListItemNav>
             </ul>
@@ -115,14 +115,14 @@ const NavigationMenuDemo = () => {
                 </NavigationMenu.Link>
               </li>
 
-              <ListItemNav href="/QuemSomos" title="Quem somos">
+              <ListItemNav href="/quemsomos" title="Quem Somos">
                 Samos uma entidade com o intuito de democratizar a Educação para
                 todos.
               </ListItemNav>
-              <ListItemNav href="/colors" title="O que fazemos">
+              <ListItemNav href="/quemsomos" title="O que fazemos">
                 Facilitamos a comunicação para o uso de Entidades.
               </ListItemNav>
-              <ListItemNav href="/EntreEmContato" title="Contato">
+              <ListItemNav href="/contato" title="Contato">
                 Entre em contato com a gente!
               </ListItemNav>
             </ul>
