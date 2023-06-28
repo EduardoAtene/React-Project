@@ -81,7 +81,7 @@ const NavigationMenuDemo = () => {
               Liberte os livros que ocupam espaço nas suas prateleiras e dê a eles a oportunidade de encantar novos leitores.
                Sua doação pode ser o primeiro capítulo de uma jornada incrível!
               </ListItemNav>
-              <ListItemNav href="/tutorial" title="Como doar Livros">
+              <ListItemNav href="/ComoDoar" title="Como doar Livros">
                 Quais meios devo fazer para realizar a doação de livro.
               </ListItemNav>
             </ul>
@@ -115,14 +115,14 @@ const NavigationMenuDemo = () => {
                 </NavigationMenu.Link>
               </li>
 
-              <ListItemNav href="https://stitches.dev/" title="Quem somos">
+              <ListItemNav href="/QuemSomos" title="Quem somos">
                 Samos uma entidade com o intuito de democratizar a Educação para
                 todos.
               </ListItemNav>
               <ListItemNav href="/colors" title="O que fazemos">
                 Facilitamos a comunicação para o uso de Entidades.
               </ListItemNav>
-              <ListItemNav href="https://icons.radix-ui.com/" title="Contato">
+              <ListItemNav href="/EntreEmContato" title="Contato">
                 Entre em contato com a gente!
               </ListItemNav>
             </ul>
