@@ -1,9 +1,10 @@
 import { Route, Routes } from "react-router-dom"; 
-import { DefaultLayout } from "./layout/DefaultLayout";
-import { HistoryOperation } from "./pages/HistoryOperation";
 import { Home } from "./pages/Home";
 import { ApresentationLayout } from "./layout/ApresentationLayout";
-import { Tutorial } from "./pages/Tutorial/index";
+import { ComoReceber} from "./pages/ComoReceber/index";
+import { EntreEmContato } from "./pages/EntreEmContato/index";
+import { ComoDoar } from "./pages/ComoDoar/index";
+import { QuemSomos } from "./pages/QuemSomos";
 
 export function Router (){
 
@@ -15,8 +16,12 @@ export function Router (){
             
            <Route path="/" element={<ApresentationLayout/>}>
                 <Route path="" element={<Home />}></Route>
-                <Route path="/tutorial" element={<Tutorial />}></Route>
+                <Route path="/doar" element={<ComoDoar />}></Route>
+                <Route path="/contato" element={<EntreEmContato />}></Route>
+                <Route path="/receber" element={<ComoReceber />}></Route>
+                <Route path="/quem somos" element={<QuemSomos />}></Route>
             </Route>
+            
 
         </Routes>
 

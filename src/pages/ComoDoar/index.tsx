@@ -1,6 +1,6 @@
 import { TutorialContainer } from "./style";
 
-export function Tutorial() {
+export function ComoDoar() {
 
   return (
       <>
