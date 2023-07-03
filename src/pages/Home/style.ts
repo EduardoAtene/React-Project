@@ -33,3 +33,7 @@ export const DivContainerPropaganda = styled.div`
     }
   }
 `
+export const MainSectionContainer = styled.div`
+  background-color: white;
+  
+`
