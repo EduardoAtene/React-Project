@@ -119,7 +119,7 @@ const NavigationMenuDemo = () => {
                 Samos uma entidade com o intuito de democratizar a Educação para
                 todos.
               </ListItemNav>
-              <ListItemNav href="/quemsomos" title="O que fazemos">
+              <ListItemNav href="/oquefazemos" title="O que fazemos">
                 Facilitamos a comunicação para o uso de Entidades.
               </ListItemNav>
               <ListItemNav href="/contato" title="Contato">

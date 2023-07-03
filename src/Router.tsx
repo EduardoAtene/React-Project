@@ -11,6 +11,8 @@ import { Login } from "./pages/Login";
 import { Registrar } from "./pages/Registrar";
 import { DoarLivro } from "./pages/DoarLivro";
 import { EditarPerfil } from "./pages/EditarPerfil";
+import { OqueFazemos } from "./pages/OqueFazemos";
+import { PaginaAnuncio } from "./pages/PaginaAnuncio";
 
 export function Router (){
 
@@ -30,6 +32,8 @@ export function Router (){
                 <Route path="/receber" element={<ComoReceber />}></Route>
                 <Route path="/quemsomos" element={<QuemSomos />}></Route>
                 <Route path="/anuncios" element={<Anuncios />}></Route>
+                <Route path="/oquefazemos" element={<OqueFazemos />}></Route>
+                <Route path="/paginaAnuncio" element={<PaginaAnuncio />}></Route>
             </Route>
             
 

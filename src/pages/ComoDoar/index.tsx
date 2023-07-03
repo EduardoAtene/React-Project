@@ -1,16 +1,16 @@
-import { TutorialContainer } from "./style";
+import { ComoDoarEstilo} from "./style";
 
 export function ComoDoar() {
 
   return (
       <>
-        <TutorialContainer>
-          <h1>Tutorial de como doar livros: criar conta, criar anúncio e realizar a doação</h1>
+        <ComoDoarEstilo>
+          <h2>Tutorial de como doar livros: criar conta, criar anúncio e realizar a doação</h2>
 
-          <h2>Introdução:</h2>
+          <h3>Introdução:</h3>
           <p>Doar livros é uma maneira maravilhosa de compartilhar conhecimento e promover a leitura. Neste tutorial, você aprenderá como doar livros seguindo alguns passos simples. Vamos lá!</p>
 
-          <h2>Passo 1: Criar uma conta</h2>
+          <h4>Passo 1: Criar uma conta</h4>
           <ol>
               <li>Acesse o site de doação de livros da instituição ou plataforma escolhida.</li>
               <li>Procure pela opção de "Criar conta" ou "Registrar-se" e clique nela.</li>
@@ -18,7 +18,7 @@ export function ComoDoar() {
               <li>Confirme sua conta por meio do link de confirmação enviado para o seu endereço de e-mail.</li>
           </ol>
 
-          <h2>Passo 2: Criar um anúncio</h2>
+          <h4>Passo 2: Criar um anúncio</h4>
           <ol>
               <li>Faça login na sua conta recém-criada.</li>
               <li>Procure pela opção de "Criar anúncio" ou algo semelhante e clique nela.</li>
@@ -27,7 +27,7 @@ export function ComoDoar() {
               <li>Se você já tiver o livro cadastrado no sistema, procure pelo campo "Buscar livro" e insira o código ISBN do livro. O sistema irá localizar as informações automaticamente. Caso contrário, continue preenchendo os campos manualmente.</li>
           </ol>
 
-          <h2>Passo 3: Realizar o anúncio</h2>
+          <h4>Passo 3: Realizar o anúncio</h4>
           <ol>
               <li>Após preencher todos os detalhes do livro, clique em "Anunciar" ou "Publicar".</li>
               <li>Revise as informações fornecidas para garantir que estejam corretas.</li>
@@ -36,10 +36,10 @@ export function ComoDoar() {
               <li>Seu anúncio estará agora disponível para visualização por outras pessoas interessadas em receber o livro.</li>
           </ol>
 
-          <h2>Conclusão:</h2>
+          <h4>Conclusão:</h4>
           <p>Parabéns! Você concluiu com sucesso o tutorial de como doar livros. Lembre-se de que a doação de livros pode fazer a diferença na vida de alguém, permitindo que mais pessoas tenham acesso ao conhecimento e à leitura. Continue ajudando a promover a educação e a cultura por meio das suas</p>
 
-        </TutorialContainer>
+        </ComoDoarEstilo>
           
     </>
   )
