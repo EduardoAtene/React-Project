@@ -34,7 +34,7 @@ const NavigationPerfilMenu = () => {
           <NavigationMenu.Content className="NavigationMenuContentPerfil">
             <ul className="List">
 
-              <ListItemNav href="/colors" title="Meu Perfil">
+              <ListItemNav href="/perfil" title="Meu Perfil">
                 Entre aqui e gerencie suas informações!
               </ListItemNav>
             </ul>
