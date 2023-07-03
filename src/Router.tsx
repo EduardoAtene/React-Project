@@ -5,6 +5,7 @@ import { ComoReceber} from "./pages/ComoReceber/index";
 import { EntreEmContato } from "./pages/EntreEmContato/index";
 import { ComoDoar } from "./pages/ComoDoar/index";
 import { QuemSomos } from "./pages/QuemSomos";
+import { Anuncios } from "./pages/Anuncio";
 
 export function Router (){
 
@@ -20,6 +21,7 @@ export function Router (){
                 <Route path="/contato" element={<EntreEmContato />}></Route>
                 <Route path="/receber" element={<ComoReceber />}></Route>
                 <Route path="/quemsomos" element={<QuemSomos />}></Route>
+                <Route path="/anuncios" element={<Anuncios />}></Route>
             </Route>
             
 
