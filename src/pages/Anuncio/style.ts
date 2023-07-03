@@ -33,6 +33,10 @@ export const TutorialContainer = styled.div`
   p {
     color: #000;
   }
+
+  .imgBook{
+    width: 100%;
+  }
   
 `
 

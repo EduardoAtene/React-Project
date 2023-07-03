@@ -25,12 +25,9 @@ export function Home() {
 
   const getLivros = async () => {
     try {
-      debugger
       const response = await axios.get(API_URL + 'livro/all');
       const data = response.data.data;
-      debugger
       setLivros(data.livros);
-
     } catch (error) {
       debugger
       console.error('Erro ao obter os livros:', error);

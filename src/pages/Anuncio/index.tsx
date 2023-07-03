@@ -1,57 +1,62 @@
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 import { ButtonCards, Cards, CardsContainer, ImagenCard, TituloTexto, TutorialContainer } from "./style";
-
-
+import imgBook from '../../assets/book_default_1.jpg';
+import Image from 'react-bootstrap/Image';
+import Container from 'react-bootstrap/esm/Container';
 
 export function Anuncios() {
-
-  
-
-  function Card({ item }:any) {
+  function Card({ livro }: any) {
     return (
-        <Cards>
-          <TituloTexto>
-            <h3>{item.title}</h3>
-          </TituloTexto>
-          <p> *Img* </p>
-          <ImagenCard>            
-          </ImagenCard>
-          <p>{item.description}</p>
-          <ButtonCards>
-            <button onClick={() => navigateToItemPage(item.id)}>Ver detalhes</button>
-          </ButtonCards>
-        </Cards>
+      <Cards>
+        <TituloTexto>
+          <h3>{livro.Titulo}</h3>
+        </TituloTexto>
+        <Container>
+
+          <Image src={imgBook} roundedCircle className='imgBook'/>
+
+        </Container>
+
+        <p>{livro.Subtitulo}</p>
+        <ButtonCards>
+          <button onClick={() => navigateToItemPage(livro.id)}>Ver detalhes</button>
+        </ButtonCards>
+      </Cards>
     );
   }
 
-  
-  function navigateToItemPage(_itemId:any) {
+  function navigateToItemPage(itemId: number) {
     // Implemente a lógica para navegar para a página do item com base no ID
     // Por exemplo, você pode usar um roteador ou atualizar a URL com o ID do item
   }
-  
 
-  const itemsFromDatabase = [
-    { id: 1, title: 'Item 1', description: 'Descrição do Item 1' },
-    { id: 2, title: 'Item 2', description: 'Descrição do Item 2' },
-    { id: 3, title: 'Item 3', description: 'Descrição do Item 3' },
-    { id: 4, title: 'Item 2', description: 'Loremsa an ajdnjasn' },
-    { id: 5, title: 'Item 3', description: 'Descrição do Item 3' },
-    // Adicione mais itens conforme necessário
-  ];
+  const [livros, setLivros] = useState([]);
+
+  useEffect(() => {
+    getLivros();
+  }, []);
+
+  const getLivros = async () => {
+    try {
+      const response = await axios.get('http://localhost:8765/api/v1/livro/all');
+      const data = response.data.data;
+      setLivros(data.livros);
+    } catch (error) {
+      console.error('Erro ao obter os livros:', error);
+    }
+  };
 
   return (
     <>
       <TutorialContainer>
-        <h2>Anuncios</h2>
+        <h2>Anúncios</h2>
         <CardsContainer>
-        {itemsFromDatabase.map(item => (
-          <Card key={item.id} item={item} />
-        ))}
-      </CardsContainer>
+          {livros.map((livro: any) => (
+            <Card key={livro.id} livro={livro} />
+          ))}
+        </CardsContainer>
       </TutorialContainer>
-
-      
     </>
   );
 }
-
