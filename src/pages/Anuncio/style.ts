@@ -49,13 +49,20 @@ export const Cards = styled.div`
   border: none;
   border-radius: 4px;
   padding-bottom: 7px;
-`
-styled.h2`
-text-align: center;
-padding: 5px;
-color: blue;
+  box-shadow: 1%;
+  box-shadow: 0px 0px 7px 2px gray;
 `
 
+export const TituloTexto = styled.div`
+  color: #00cccc;
+  text-align: center;
+  border-color: blue;
+  padding-top: 15px;
+`
+
+export const ImagenCard = styled.div`
+  padding: 30%;
+`
 
 
 export const ButtonCards = styled.div`

@@ -1,4 +1,4 @@
-import { ButtonCards, Cards, CardsContainer, TutorialContainer } from "./style";
+import { ButtonCards, Cards, CardsContainer, ImagenCard, TituloTexto, TutorialContainer } from "./style";
 
 
 
@@ -9,8 +9,13 @@ export function Anuncios() {
   function Card({ item }:any) {
     return (
         <Cards>
-          <h3>{item.title}</h3>
-          <p>{item.description}</p><br></br>
+          <TituloTexto>
+            <h3>{item.title}</h3>
+          </TituloTexto>
+          <p> *Img* </p>
+          <ImagenCard>            
+          </ImagenCard>
+          <p>{item.description}</p>
           <ButtonCards>
             <button onClick={() => navigateToItemPage(item.id)}>Ver detalhes</button>
           </ButtonCards>
@@ -37,17 +42,15 @@ export function Anuncios() {
   return (
     <>
       <TutorialContainer>
-        <h2>Livros que voam das estantes</h2>
-        <h2>para os corações</h2>
-        <h2>dos leitores.</h2>
-        <span>Leia, doe, inspire - juntos, fazemos a diferença!</span>
-      </TutorialContainer>
-
-      <CardsContainer>
+        <h2>Anuncios</h2>
+        <CardsContainer>
         {itemsFromDatabase.map(item => (
           <Card key={item.id} item={item} />
         ))}
       </CardsContainer>
+      </TutorialContainer>
+
+      
     </>
   );
 }

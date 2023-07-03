@@ -45,7 +45,7 @@ const NavigationMenuDemo = () => {
                 </NavigationMenu.Link>
               </li>
 
-              <ListItemNav href="/" title="Catálogo de Livros">
+              <ListItemNav href="/anuncios" title="Catálogo de Livros">
                 Aqui você encontra todos os livros que foram doados pela população!
               </ListItemNav>
               <ListItemNav href="/receber" title="Como pegar um Livro">
