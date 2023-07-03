@@ -9,6 +9,8 @@ import { Anuncios } from "./pages/Anuncio";
 import { DefaultLayout } from "./layout/DefaultLayout";
 import { Login } from "./pages/Login";
 import { Registrar } from "./pages/Registrar";
+import { DoarLivro } from "./pages/DoarLivro";
+import { EditarPerfil } from "./pages/EditarPerfil";
 
 export function Router (){
 
@@ -21,6 +23,8 @@ export function Router (){
             
            <Route path="/" element={<ApresentationLayout/>}>
                 <Route path="" element={<Home />}></Route>
+                <Route path="/doarlivro" element={<DoarLivro />}></Route>
+                <Route path="/perfil" element={<EditarPerfil />}></Route>
                 <Route path="/comodoar" element={<ComoDoar />}></Route>
                 <Route path="/contato" element={<EntreEmContato />}></Route>
                 <Route path="/receber" element={<ComoReceber />}></Route>

@@ -77,7 +77,7 @@ const NavigationMenuDemo = () => {
                 </NavigationMenu.Link>
               </li>
 
-              <ListItemNav href="/comodoar" title="Doar Livro">
+              <ListItemNav href="/doarlivro" title="Doar Livro">
               Liberte os livros que ocupam espaço nas suas prateleiras e dê a eles a oportunidade de encantar novos leitores.
                Sua doação pode ser o primeiro capítulo de uma jornada incrível!
               </ListItemNav>
