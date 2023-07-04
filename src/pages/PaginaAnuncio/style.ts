@@ -23,7 +23,9 @@ export const TutorialContainer = styled.div`
   padding: 50px;
   box-shadow: 1%;
   box-shadow: 0px 0px 15px 1px black;
-
+  .imgDonation{
+    width: 50%;
+  }
 `
 export const ImagemAnuncio  = styled.div`
   display: inline-block; /* Exibe os cards um ao lado do outro */

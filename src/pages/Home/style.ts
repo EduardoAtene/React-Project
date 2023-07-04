@@ -35,5 +35,10 @@ export const DivContainerPropaganda = styled.div`
 `
 export const MainSectionContainer = styled.div`
   background-color: white;
+  color: black;
+  /* h1 */
+  .divContex{
+    padding: 2rem;
+  }
   
 `

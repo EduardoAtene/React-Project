@@ -33,7 +33,7 @@ export function Router (){
                 <Route path="/quemsomos" element={<QuemSomos />}></Route>
                 <Route path="/anuncios" element={<Anuncios />}></Route>
                 <Route path="/oquefazemos" element={<OqueFazemos />}></Route>
-                <Route path="/paginaanuncio" element={<PaginaAnuncio />}></Route>
+                <Route path="/paginaanuncio/:idLivro" element={<PaginaAnuncio />}></Route>
             </Route>
             
 

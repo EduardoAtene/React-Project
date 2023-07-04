@@ -27,8 +27,7 @@ export function Anuncios() {
   }
 
   function navigateToItemPage(itemId: number) {
-    // Implemente a lógica para navegar para a página do item com base no ID
-    // Por exemplo, você pode usar um roteador ou atualizar a URL com o ID do item
+    window.location.href = "/paginaanuncio/"+itemId;
   }
 
   const [livros, setLivros] = useState([]);
